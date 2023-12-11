@@ -1,0 +1,10 @@
+#!/usr/bin/env zsh
+
+[ -f ~/.config/lf/icons ] && {
+	LF_ICONS="$(sed 's/#.*$//;/^\s*$/d' ~/.config/lf/icons | sed 's/ \+/:/g')" \
+	&& export LF_ICONS
+}
+
+if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
+	pgrep i3 || exec startx "$XDG_CONFIG_HOME/X11/.xinitrc"
+fi

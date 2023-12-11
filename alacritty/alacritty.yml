@@ -1,0 +1,105 @@
+env:
+  TERM: xterm-256color
+
+window:
+  padding:
+    x: 0
+    y: 0
+  opacity: 0.850
+  class:
+    instance: Alacritty
+    general: Alacritty
+
+scrolling:
+  history: 10000
+  multiplier: 3
+
+font:
+  normal:
+    family: NotoMono NF
+
+draw_bold_text_with_bright_colors: false
+
+colors:
+  primary:
+    background: '0x282828'
+    foreground: '0xebdbb2'
+  normal:
+    black:   '0x282828'
+    red:     '0xcc241d'
+    green:   '0x98971a'
+    yellow:  '0xd79921'
+    blue:    '0x458588'
+    magenta: '0xb16286'
+    cyan:    '0x689d6a'
+    white:   '0xa89984'
+  bright:
+    black:   '0x928374'
+    red:     '0xfb4934'
+    green:   '0xb8bb26'
+    yellow:  '0xfabd2f'
+    blue:    '0x83a598'
+    magenta: '0xd3869b'
+    cyan:    '0x8ec07c'
+    white:   '0xebdbb2'
+  indexed_colors:
+
+    - { index: 236, color: '0x32302f' }
+    - { index: 234, color: '0x1d2021' }
+
+    - { index: 235, color: '0x282828' }
+    - { index: 237, color: '0x3c3836' }
+    - { index: 239, color: '0x504945' }
+    - { index: 241, color: '0x665c54' }
+    - { index: 243, color: '0x7c6f64' }
+
+    - { index: 244, color: '0x928374' }
+    - { index: 245, color: '0x928374' }
+
+    - { index: 228, color: '0xf2e5bc' }
+    - { index: 230, color: '0xf9f5d7' }
+
+    - { index: 229, color: '0xfbf1c7' }
+    - { index: 223, color: '0xebdbb2' }
+    - { index: 250, color: '0xd5c4a1' }
+    - { index: 248, color: '0xbdae93' }
+    - { index: 246, color: '0xa89984' }
+
+    - { index: 167, color: '0xfb4934' }
+    - { index: 142, color: '0xb8bb26' }
+    - { index: 214, color: '0xfabd2f' }
+    - { index: 109, color: '0x83a598' }
+    - { index: 175, color: '0xd3869b' }
+    - { index: 108, color: '0x8ec07c' }
+    - { index: 208, color: '0xfe8019' }
+
+    - { index: 88,  color: '0x9d0006' }
+    - { index: 100, color: '0x79740e' }
+    - { index: 136, color: '0xb57614' }
+    - { index: 24,  color: '0x076678' }
+    - { index: 96,  color: '0x8f3f71' }
+    - { index: 66,  color: '0x427b58' }
+    - { index: 130, color: '0xaf3a03' }
+
+bell:
+  animation: EaseOutExpo
+  duration: 0
+  color: '#ffffff'
+
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+  save_to_clipboard: true
+
+cursor:
+  style:
+    shape: Block
+    blinking: Never
+  vi_mode_style: None
+  unfocused_hollow: true
+
+live_config_reload: true
+
+shell:
+  program: /bin/zsh
+
+working_directory: None

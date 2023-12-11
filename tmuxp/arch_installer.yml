@@ -1,0 +1,13 @@
+session_name: arch_installer
+start_directory: $HOME/workspace/arch_installer
+
+windows:
+  - window_name: nvim+term
+    layout: main-horizontal
+    options:
+      main-pane-height: 90%
+    panes:
+      - shell_command:
+        - nvim install_sys.sh
+        focus: true
+      - pane

@@ -1,0 +1,21 @@
+#!/usr/bin/env zsh
+
+alias ls="ls -lah --color=auto"
+alias v="nvim"
+
+alias paci="sudo pacman -S"    # install
+alias pacu="sudo pacman -Syu"  # update
+alias pacsr="sudo pacman -Ss"   # search remote packages
+alias pacsl="sudo pacman -Qs"   # search local packages
+alias pacr="sudo pacman -Rns"  # remove package with unused dependencies
+
+alias yayi="yay -S"    # install
+alias yayu="yay -Syu"  # update
+alias yaysr="yay -Ss"   # search remove packages
+alias yaysl="yay -Qs"   # search local packages
+alias yayr="yay -Rns"  # remove package with unused dependencies
+
+alias d="dirs -v"
+for index ({1..9}) alias "$index"="cd +${index}"; unset index
+
+alias rgf="rg --files | rg -i " # find files by filename
