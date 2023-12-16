@@ -2,15 +2,13 @@
 
 source ./zsh/zshenv
 
+mkdir -p "$XDG_CONFIG_HOME"
+
 ########
 # nvim #
 ########
 
-if [ ! -d "$VIMCONFIG" ]
-then
-    mkdir "$VIMCONFIG"
-fi
-
+mkdir -p "$VIMCONFIG"
 ln -sf "$DOTFILES/nvim/init.lua" "$VIMCONFIG"
 ln -sf "$DOTFILES/nvim/.luarc.json" "$VIMCONFIG"
 ln -sf "$DOTFILES/nvim/lazy-lock.json" "$VIMCONFIG"
@@ -26,7 +24,7 @@ ln -sf "$DOTFILES/nvim/lua" "$VIMCONFIG"
 ######
 
 rm -rf "$I3CONFIG"
-ln -s "$DOTFILES/i3" "$XDG_CONFIG_HOME"
+ln -sf "$DOTFILES/i3" "$XDG_CONFIG_HOME"
 
 #######
 # zsh #
