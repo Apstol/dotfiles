@@ -5,4 +5,8 @@ windows:
   - window_name: terms
     layout: tiled
     panes:
-      - ls -lah
+      - shell_command:
+        - ls -lah
+        focus: true
+      - pane
+

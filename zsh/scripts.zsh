@@ -33,3 +33,8 @@ ftmuxp() {
         tmuxp load "$ID"
     fi
 }
+
+# Update pacman mirrorlist using reflector
+updateMirrors() {
+    sudo reflector --country Russia --latest 5 --age 2 --fastest 5 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+}
