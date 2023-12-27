@@ -15,7 +15,7 @@ vim.opt.swapfile = false
 vim.opt.backup = false
 
 -- save undo-trees in files
-vim.opt.undodir = os.getenv("HOME") .. "/.nvim/undodir"
+vim.opt.undodir = os.getenv('HOME') .. '/.nvim/undodir'
 vim.opt.undofile = true
 vim.opt.undolevels = 10000
 vim.opt.undoreload = 10000
@@ -26,11 +26,11 @@ vim.opt.incsearch = true
 vim.opt.termguicolors = true
 
 vim.opt.scrolloff = 8
-vim.opt.signcolumn = "yes"
-vim.opt.isfname:append("@-@")
+vim.opt.signcolumn = 'yes'
+vim.opt.isfname:append('@-@')
 
 vim.opt.updatetime = 50
 
-vim.opt.colorcolumn = "90"
+vim.opt.colorcolumn = '130'
 
-vim.g.mapleader = " "
+vim.g.mapleader = ' '
